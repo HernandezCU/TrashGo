@@ -8,29 +8,24 @@
 import UIKit
 
 class ProfileVC: UIViewController {
-
+    
+    @IBOutlet var bgView: UIView!
     
     @IBOutlet var profileImageView: UIImageView!
     
-    @IBOutlet var bgBackgroundView: UIView!
+    @IBOutlet var leaderboardBtn: UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profileImageView.layer.cornerRadius = profileImageView.frame.height/2
+//        profileImageView.layer.cornerRadius = profileImageView.frame.height/2
 
-        bgBackgroundView.layer.masksToBounds = false
-        // Do any additional setup after loading the view.
+        
+        bgView.layer.masksToBounds = false
+        
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
