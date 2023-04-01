@@ -13,14 +13,27 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var map: MKMapView!
     
-    let coord = CLLocationCoordinate2D(latitude: 36.18706299999999, longitude: -94.1090385)
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var data: UILabel!
+    
+    
+    let coord = CLLocationCoordinate2D(latitude: CLLocationDegrees(gdata[gindex].lat), longitude: CLLocationDegrees(gdata[gindex].lng))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         map.setRegion(MKCoordinateRegion(center: coord, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)), animated: true)
         map.delegate = self
+        DispatchQueue.main.async{
+            self.name.text = gdata[gindex].title
+            self.address.text = gdata[gindex].address
+            self.data.text = gdata[gindex].date
+        }
+        
         addPin()
+
+
     }
     
     

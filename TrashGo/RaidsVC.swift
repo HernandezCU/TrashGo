@@ -11,6 +11,16 @@ import Alamofire
 import NotificationBannerSwift
 
 var logged_in = false
+var gdata: [gevent] = []
+var gindex = 0
+
+struct gevent {
+    let title: String
+    let date: String
+    let address: String
+    let lat: Float
+    let lng: Float
+}
 
 class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -25,6 +35,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let address: String
         
     }
+
     struct user: Codable{
         let user: me
     }
@@ -54,7 +65,6 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let lat: Float
         let lng: Float
     }
-    
     var data: [event] = [] /*= [
         event(icon: "tree.circle.fill", title: "Park Cleanup", date: "4/01/2023", address: "9123 S Park Way, Siloam Springs, AR, 72761"),
         event(icon: "signpost.right.and.left.circle.fill", title: "Clean up the Trails", date: "4/19/2023", address: "911 S Washington St, Siloam Springs, AR, 72761")]
@@ -150,7 +160,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                             var icn = "signpost.right.and.left.circle.fill"
                         }
                         self.data.append(event(icon: icn, title: i.name, date: Date().formatted(), address: i.address))
-                        
+                        gdata.append(gevent(title: i.name, date: Date().formatted(), address: i.address, lat: i.location.lat, lng: i.location.lng))
                     }
                     
                     self.table.reloadData()//                        self.key_label.text = user.user.key
@@ -182,6 +192,13 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.layer.masksToBounds = true
         
         return  cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        gindex = indexPath.row
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "map", sender: nil)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
