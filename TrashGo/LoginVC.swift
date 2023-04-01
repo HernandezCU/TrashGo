@@ -32,17 +32,6 @@ class LoginVC: UIViewController {
             
             spinner.startAnimating()
             
-            guard let emailText = email_field.text, let emailData = emailText.data(using: .utf8) else {
-                print("Invalid email")
-                return
-            }
-            
-            guard let passwordText = password_field.text, let passwordData = passwordText.data(using: .utf8) else {
-                print("Invalid password")
-                return
-            }
-            
-            
             let parameters: Parameters = ["email": email_field.text!, "password": password_field.text!]
             
             let request = AF.request("https://greencitygo.net/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
