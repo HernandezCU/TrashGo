@@ -69,6 +69,10 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         fetch_data()
         print(key)
         
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "map", sender: nil)
+        }
+        
     }
     
     override func viewDidLoad() {

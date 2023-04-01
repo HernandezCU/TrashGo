@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -62,6 +63,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeL-50-xdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1205" y="-301"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="JJR-vU-MPo">
+            <objects>
+                <viewController id="u2Q-oj-iKX" customClass="MapViewController" customModule="TrashGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nsj-3j-5KC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T04-Yw-vmg">
+                                <rect key="frame" x="0.0" y="92" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="9fs-jv-QZA"/>
+                                </constraints>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="vOH-Nc-Zqg">
+                                <rect key="frame" x="20" y="422" width="374" height="261"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DG-kd-VPv">
+                                        <rect key="frame" x="146" y="0.0" width="82" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NVB-bQ-D0S">
+                                        <rect key="frame" x="10" y="52" width="354" height="171.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">This public spot can become littered with trash and should be a focus spot for potential issues. Trash from here can impact the health of wild life and humans alike.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpg-AU-is3">
+                                        <rect key="frame" x="10" y="240.5" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NVB-bQ-D0S" secondAttribute="trailing" constant="20" id="7XV-0U-dmp"/>
+                                    <constraint firstItem="fpg-AU-is3" firstAttribute="leading" secondItem="vOH-Nc-Zqg" secondAttribute="leading" constant="10" id="C0Z-aS-PTb"/>
+                                    <constraint firstItem="NVB-bQ-D0S" firstAttribute="leading" secondItem="vOH-Nc-Zqg" secondAttribute="leading" constant="10" id="COL-XK-IZ3"/>
+                                    <constraint firstItem="fpg-AU-is3" firstAttribute="leading" secondItem="vOH-Nc-Zqg" secondAttribute="leading" constant="10" id="LSz-l5-Hri"/>
+                                    <constraint firstItem="fpg-AU-is3" firstAttribute="top" secondItem="NVB-bQ-D0S" secondAttribute="bottom" constant="15" id="N7J-ui-msn"/>
+                                    <constraint firstAttribute="trailing" secondItem="fpg-AU-is3" secondAttribute="trailing" constant="10" id="NC8-8T-48B"/>
+                                    <constraint firstItem="fpg-AU-is3" firstAttribute="top" secondItem="NVB-bQ-D0S" secondAttribute="bottom" constant="15" id="agc-Nm-3xV"/>
+                                    <constraint firstItem="NVB-bQ-D0S" firstAttribute="top" secondItem="1DG-kd-VPv" secondAttribute="bottom" constant="15" id="huy-Dw-lur"/>
+                                    <constraint firstAttribute="trailing" secondItem="fpg-AU-is3" secondAttribute="trailing" constant="10" id="nX3-Bz-a0I"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtH-Bg-st6">
+                                <rect key="frame" x="82" y="703" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5xX-rv-sgI"/>
+                                    <constraint firstAttribute="height" constant="60" id="6vB-a6-19J"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Take me there"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RUc-mv-FUj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vOH-Nc-Zqg" firstAttribute="leading" secondItem="RUc-mv-FUj" secondAttribute="leading" constant="20" id="9rM-Hz-kDs"/>
+                            <constraint firstItem="RUc-mv-FUj" firstAttribute="trailing" secondItem="T04-Yw-vmg" secondAttribute="trailing" id="Aia-OE-c4M"/>
+                            <constraint firstItem="T04-Yw-vmg" firstAttribute="top" secondItem="RUc-mv-FUj" secondAttribute="top" id="FpG-FR-Eqp"/>
+                            <constraint firstItem="RUc-mv-FUj" firstAttribute="bottom" secondItem="TtH-Bg-st6" secondAttribute="bottom" constant="50" id="JMg-T7-JXt"/>
+                            <constraint firstItem="TtH-Bg-st6" firstAttribute="centerX" secondItem="nsj-3j-5KC" secondAttribute="centerX" id="JaJ-EN-kNv"/>
+                            <constraint firstItem="TtH-Bg-st6" firstAttribute="top" secondItem="vOH-Nc-Zqg" secondAttribute="bottom" constant="20" id="NbQ-0X-5VX"/>
+                            <constraint firstItem="TtH-Bg-st6" firstAttribute="leading" secondItem="RUc-mv-FUj" secondAttribute="leading" constant="82" id="UHF-Oj-nYX"/>
+                            <constraint firstItem="RUc-mv-FUj" firstAttribute="trailing" secondItem="vOH-Nc-Zqg" secondAttribute="trailing" constant="20" id="V62-0p-Jki"/>
+                            <constraint firstItem="RUc-mv-FUj" firstAttribute="trailing" secondItem="TtH-Bg-st6" secondAttribute="trailing" constant="82" id="W3M-Bw-XBP"/>
+                            <constraint firstItem="vOH-Nc-Zqg" firstAttribute="top" secondItem="T04-Yw-vmg" secondAttribute="bottom" constant="30" id="Xwq-aj-qmb"/>
+                            <constraint firstItem="T04-Yw-vmg" firstAttribute="leading" secondItem="RUc-mv-FUj" secondAttribute="leading" id="zC4-Ju-6Wl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="WgW-Di-Zkf"/>
+                    <connections>
+                        <outlet property="map" destination="T04-Yw-vmg" id="vHP-9z-e9s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuP-8h-el1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2495.6521739130435" y="39.508928571428569"/>
         </scene>
         <!--Account-->
         <scene sceneID="0jr-qO-7hj">
@@ -436,6 +523,7 @@
                         <segue destination="TG9-8t-Wa4" kind="popoverPresentation" identifier="login" popoverAnchorView="zXM-fO-vur" id="hhO-J9-HS7">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
+                        <segue destination="u2Q-oj-iKX" kind="show" identifier="map" id="f7H-mB-pwZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8z-E0-Wvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -712,7 +800,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMJ-Sn-g7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2051" y="388"/>
+            <point key="canvasLocation" x="1401" y="1200"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="wzI-u9-GEG">
@@ -862,7 +950,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtT-DP-IvQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2870" y="388"/>
+            <point key="canvasLocation" x="2220" y="1200"/>
         </scene>
     </scenes>
     <resources>
@@ -879,6 +967,9 @@
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="third" width="512" height="512"/>
         <image name="trophy.fill" catalog="system" width="128" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
