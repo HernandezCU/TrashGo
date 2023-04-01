@@ -115,7 +115,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 if let dictionary = data as? [String: Any],
                 let user = dictionary["user"] as? [String: Any] {
                     print(user) // Access the 'user' dictionary
-                    if let zip = user["zip"] as? String {
+                    if let zip = user["email"] as? String {
                         self.fetch_data(zip: String(zip))
                     }
                 }
@@ -126,7 +126,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func fetch_data(zip: String){
-        let parameters: Parameters = ["zip_code": zip]
+        let parameters: Parameters = ["email": zip]
         
         let request = AF.request("https://greencitygo.net/search", method: .post, parameters: parameters, encoding: JSONEncoding.default)
                                                       
