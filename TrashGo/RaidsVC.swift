@@ -52,10 +52,8 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     struct latlong: Codable{
         let lat: Float
-        let long: Float
+        let lng: Float
     }
-    
-    var zip = ""
     
     var data: [event] = [] /*= [
         event(icon: "tree.circle.fill", title: "Park Cleanup", date: "4/01/2023", address: "9123 S Park Way, Siloam Springs, AR, 72761"),
@@ -66,7 +64,6 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         fetch_me()
-        fetch_data()
         print(key)
         
         DispatchQueue.main.async {
@@ -87,7 +84,6 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }else{
             key = user_key
             fetch_me()
-            fetch_data()
         }
         
     }
@@ -100,7 +96,6 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }else{
             key = user_key
             fetch_me()
-            fetch_data()
         }
     }
     
@@ -110,39 +105,27 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         ]
 
         let parameters: Parameters = [
-            "key": "matt@matt.com"
+            "email": "matt@matt.com"
         ]
 
         AF.request("https://greencitygo.net/me", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
             switch response.result {
             case .success(let data):
                 print(data)
+                if let dictionary = data as? [String: Any],
+                let user = dictionary["user"] as? [String: Any] {
+                    print(user) // Access the 'user' dictionary
+                    if let zip = user["zip"] as? String {
+                        self.fetch_data(zip: String(zip))
+                    }
+                }
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
-//        let parameters: Parameters = ["email": "matt@matt.com"]
-//
-//        let request = AF.request("https://greencitygo.net/me", method: .post, parameters: parameters, encoding: JSONEncoding.default)
-//
-//        request.responseDecodable(of: me.self) { (response) in
-//            print(response)
-//            print("here4")
-//            guard response.value != nil else {
-//                print("Failed")
-//                print(response)
-//                return }
-//            print("Success")
-//            self.spinner.stopAnimating()
-//
-//            DispatchQueue.main.async {
-//                self.zip = response.value!.zip
-//            }
-//            }
-//
-       }
+    }
     
-    func fetch_data(){
+    func fetch_data(zip: String){
         let parameters: Parameters = ["zip_code": zip]
         
         let request = AF.request("https://greencitygo.net/search", method: .post, parameters: parameters, encoding: JSONEncoding.default)
