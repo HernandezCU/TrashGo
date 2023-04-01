@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE324D8629D7B9C600E34F68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8529D7B9C600E34F68 /* AppDelegate.swift */; };
+		AE324D8829D7B9C600E34F68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8729D7B9C600E34F68 /* SceneDelegate.swift */; };
+		AE324D8A29D7B9C600E34F68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8929D7B9C600E34F68 /* ViewController.swift */; };
+		AE324D8D29D7B9C600E34F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE324D8B29D7B9C600E34F68 /* Main.storyboard */; };
+		AE324D9029D7B9C600E34F68 /* TrashGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8E29D7B9C600E34F68 /* TrashGo.xcdatamodeld */; };
+		AE324D9229D7B9C900E34F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE324D9129D7B9C900E34F68 /* Assets.xcassets */; };
+		AE324D9529D7B9C900E34F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE324D9329D7B9C900E34F68 /* LaunchScreen.storyboard */; };
+		AE324DA029D7B9C900E34F68 /* TrashGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D9F29D7B9C900E34F68 /* TrashGoTests.swift */; };
+		AE324DAA29D7B9C900E34F68 /* TrashGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DA929D7B9C900E34F68 /* TrashGoUITests.swift */; };
+		AE324DAC29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DAB29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE324D9C29D7B9C900E34F68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE324D7A29D7B9C600E34F68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE324D8129D7B9C600E34F68;
+			remoteInfo = TrashGo;
+		};
+		AE324DA629D7B9C900E34F68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE324D7A29D7B9C600E34F68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE324D8129D7B9C600E34F68;
+			remoteInfo = TrashGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE324D8229D7B9C600E34F68 /* TrashGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrashGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE324D8529D7B9C600E34F68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE324D8729D7B9C600E34F68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE324D8929D7B9C600E34F68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE324D8C29D7B9C600E34F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE324D8F29D7B9C600E34F68 /* TrashGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrashGo.xcdatamodel; sourceTree = "<group>"; };
+		AE324D9129D7B9C900E34F68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE324D9429D7B9C900E34F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE324D9629D7B9C900E34F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE324D9B29D7B9C900E34F68 /* TrashGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrashGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE324D9F29D7B9C900E34F68 /* TrashGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashGoTests.swift; sourceTree = "<group>"; };
+		AE324DA529D7B9C900E34F68 /* TrashGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrashGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE324DA929D7B9C900E34F68 /* TrashGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashGoUITests.swift; sourceTree = "<group>"; };
+		AE324DAB29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE324D7F29D7B9C600E34F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE324D9829D7B9C900E34F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE324DA229D7B9C900E34F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE324D7929D7B9C600E34F68 = {
+			isa = PBXGroup;
+			children = (
+				AE324D8429D7B9C600E34F68 /* TrashGo */,
+				AE324D9E29D7B9C900E34F68 /* TrashGoTests */,
+				AE324DA829D7B9C900E34F68 /* TrashGoUITests */,
+				AE324D8329D7B9C600E34F68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE324D8329D7B9C600E34F68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE324D8229D7B9C600E34F68 /* TrashGo.app */,
+				AE324D9B29D7B9C900E34F68 /* TrashGoTests.xctest */,
+				AE324DA529D7B9C900E34F68 /* TrashGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE324D8429D7B9C600E34F68 /* TrashGo */ = {
+			isa = PBXGroup;
+			children = (
+				AE324D8529D7B9C600E34F68 /* AppDelegate.swift */,
+				AE324D8729D7B9C600E34F68 /* SceneDelegate.swift */,
+				AE324D8929D7B9C600E34F68 /* ViewController.swift */,
+				AE324D8B29D7B9C600E34F68 /* Main.storyboard */,
+				AE324D9129D7B9C900E34F68 /* Assets.xcassets */,
+				AE324D9329D7B9C900E34F68 /* LaunchScreen.storyboard */,
+				AE324D9629D7B9C900E34F68 /* Info.plist */,
+				AE324D8E29D7B9C600E34F68 /* TrashGo.xcdatamodeld */,
+			);
+			path = TrashGo;
+			sourceTree = "<group>";
+		};
+		AE324D9E29D7B9C900E34F68 /* TrashGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE324D9F29D7B9C900E34F68 /* TrashGoTests.swift */,
+			);
+			path = TrashGoTests;
+			sourceTree = "<group>";
+		};
+		AE324DA829D7B9C900E34F68 /* TrashGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE324DA929D7B9C900E34F68 /* TrashGoUITests.swift */,
+				AE324DAB29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift */,
+			);
+			path = TrashGoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE324D8129D7B9C600E34F68 /* TrashGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE324DAF29D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGo" */;
+			buildPhases = (
+				AE324D7E29D7B9C600E34F68 /* Sources */,
+				AE324D7F29D7B9C600E34F68 /* Frameworks */,
+				AE324D8029D7B9C600E34F68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrashGo;
+			productName = TrashGo;
+			productReference = AE324D8229D7B9C600E34F68 /* TrashGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE324D9A29D7B9C900E34F68 /* TrashGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE324DB229D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGoTests" */;
+			buildPhases = (
+				AE324D9729D7B9C900E34F68 /* Sources */,
+				AE324D9829D7B9C900E34F68 /* Frameworks */,
+				AE324D9929D7B9C900E34F68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE324D9D29D7B9C900E34F68 /* PBXTargetDependency */,
+			);
+			name = TrashGoTests;
+			productName = TrashGoTests;
+			productReference = AE324D9B29D7B9C900E34F68 /* TrashGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE324DA429D7B9C900E34F68 /* TrashGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE324DB529D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGoUITests" */;
+			buildPhases = (
+				AE324DA129D7B9C900E34F68 /* Sources */,
+				AE324DA229D7B9C900E34F68 /* Frameworks */,
+				AE324DA329D7B9C900E34F68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE324DA729D7B9C900E34F68 /* PBXTargetDependency */,
+			);
+			name = TrashGoUITests;
+			productName = TrashGoUITests;
+			productReference = AE324DA529D7B9C900E34F68 /* TrashGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE324D7A29D7B9C600E34F68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AE324D8129D7B9C600E34F68 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AE324D9A29D7B9C900E34F68 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AE324D8129D7B9C600E34F68;
+					};
+					AE324DA429D7B9C900E34F68 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AE324D8129D7B9C600E34F68;
+					};
+				};
+			};
+			buildConfigurationList = AE324D7D29D7B9C600E34F68 /* Build configuration list for PBXProject "TrashGo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE324D7929D7B9C600E34F68;
+			productRefGroup = AE324D8329D7B9C600E34F68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE324D8129D7B9C600E34F68 /* TrashGo */,
+				AE324D9A29D7B9C900E34F68 /* TrashGoTests */,
+				AE324DA429D7B9C900E34F68 /* TrashGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE324D8029D7B9C600E34F68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE324D9529D7B9C900E34F68 /* LaunchScreen.storyboard in Resources */,
+				AE324D9229D7B9C900E34F68 /* Assets.xcassets in Resources */,
+				AE324D8D29D7B9C600E34F68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE324D9929D7B9C900E34F68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE324DA329D7B9C900E34F68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE324D7E29D7B9C600E34F68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE324D9029D7B9C600E34F68 /* TrashGo.xcdatamodeld in Sources */,
+				AE324D8A29D7B9C600E34F68 /* ViewController.swift in Sources */,
+				AE324D8629D7B9C600E34F68 /* AppDelegate.swift in Sources */,
+				AE324D8829D7B9C600E34F68 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE324D9729D7B9C900E34F68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE324DA029D7B9C900E34F68 /* TrashGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE324DA129D7B9C900E34F68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE324DAA29D7B9C900E34F68 /* TrashGoUITests.swift in Sources */,
+				AE324DAC29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE324D9D29D7B9C900E34F68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE324D8129D7B9C600E34F68 /* TrashGo */;
+			targetProxy = AE324D9C29D7B9C900E34F68 /* PBXContainerItemProxy */;
+		};
+		AE324DA729D7B9C900E34F68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE324D8129D7B9C600E34F68 /* TrashGo */;
+			targetProxy = AE324DA629D7B9C900E34F68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE324D8B29D7B9C600E34F68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE324D8C29D7B9C600E34F68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE324D9329D7B9C900E34F68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE324D9429D7B9C900E34F68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE324DAD29D7B9C900E34F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE324DAE29D7B9C900E34F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE324DB029D7B9C900E34F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KDWC62685W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrashGo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hernandezcu.TrashGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE324DB129D7B9C900E34F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KDWC62685W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrashGo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hernandezcu.TrashGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE324DB329D7B9C900E34F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KDWC62685W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hernandezcu.TrashGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrashGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrashGo";
+			};
+			name = Debug;
+		};
+		AE324DB429D7B9C900E34F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KDWC62685W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hernandezcu.TrashGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrashGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrashGo";
+			};
+			name = Release;
+		};
+		AE324DB629D7B9C900E34F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KDWC62685W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hernandezcu.TrashGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrashGo;
+			};
+			name = Debug;
+		};
+		AE324DB729D7B9C900E34F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KDWC62685W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hernandezcu.TrashGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrashGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE324D7D29D7B9C600E34F68 /* Build configuration list for PBXProject "TrashGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE324DAD29D7B9C900E34F68 /* Debug */,
+				AE324DAE29D7B9C900E34F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE324DAF29D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE324DB029D7B9C900E34F68 /* Debug */,
+				AE324DB129D7B9C900E34F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE324DB229D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE324DB329D7B9C900E34F68 /* Debug */,
+				AE324DB429D7B9C900E34F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE324DB529D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE324DB629D7B9C900E34F68 /* Debug */,
+				AE324DB729D7B9C900E34F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE324D8E29D7B9C600E34F68 /* TrashGo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE324D8F29D7B9C600E34F68 /* TrashGo.xcdatamodel */,
+			);
+			currentVersion = AE324D8F29D7B9C600E34F68 /* TrashGo.xcdatamodel */;
+			path = TrashGo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE324D7A29D7B9C600E34F68 /* Project object */;
+}
