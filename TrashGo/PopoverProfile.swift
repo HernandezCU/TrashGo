@@ -7,9 +7,10 @@
 
 import UIKit
 
-class PopoverProfile: UIViewController {
-
+class PopoverProfile: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var table: UITableView!
+
     @IBOutlet var firstPlaceBtn: UIImageView!
     @IBOutlet var secondPlaceBtn: UIImageView!
     @IBOutlet var thirdPlaceBtn: UIImageView!
@@ -17,13 +18,24 @@ class PopoverProfile: UIViewController {
     @IBOutlet var podiumView: UIView!
     
     
+    struct lboard{
+        let icon: String
+        let username: String
+        let points: String
+        
+    }
+    
+    let data: [lboard] = [lboard(icon: "first", username: "DaCat4MVP", points: "1000000"), lboard(icon: "second", username: "IDK", points: "89022"), lboard(icon: "third", username: "JOHS", points: "12344")]
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        table.dataSource = self
+        table.delegate = self
         podiumView.layer.masksToBounds = false
         
-        firstPlaceBtn.layer.cornerRadius = 0.5 * firstPlaceBtn.bounds.size.width
+        firstPlaceBtn.layer.cornerRadius = 0.40 * firstPlaceBtn.bounds.size.width
 
         secondPlaceBtn.layer.cornerRadius = 0.5 * secondPlaceBtn.bounds.size.width
         thirdPlaceBtn.layer.cornerRadius = 0.5 * thirdPlaceBtn.bounds.size.width
@@ -47,14 +59,26 @@ class PopoverProfile: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell  = table.dequeueReusableCell(withIdentifier: "lbcell", for: indexPath) as! LBCell
+            let d  = data[indexPath.row]
+            
+            cell.username.text = d.username
+            cell.points.text = d.points
+            cell.icon.image = UIImage(named: d.icon)
+            
+            cell.layer.cornerRadius = 10
+            cell.layer.masksToBounds = true
+            
+            return  cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
 }

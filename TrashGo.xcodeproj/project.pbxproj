@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1652F9ED29D7E99600372EED /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652F9EC29D7E99600372EED /* ProfileVC.swift */; };
 		16F77A3329D84A710047E436 /* PopoverProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F77A3229D84A700047E436 /* PopoverProfile.swift */; };
+		79265024E59810E570D22B4B /* Pods_TrashGo_TrashGoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5F139D56F78B1C8EB3500E /* Pods_TrashGo_TrashGoUITests.framework */; };
+		A5E4E450372CFEAEB57E6372 /* Pods_TrashGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC57DB699658E1D7B8C71EC0 /* Pods_TrashGo.framework */; };
+		AE0BB29629D8649B006013FA /* LBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0BB29529D8649B006013FA /* LBCell.swift */; };
 		AE324D8629D7B9C600E34F68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8529D7B9C600E34F68 /* AppDelegate.swift */; };
 		AE324D8829D7B9C600E34F68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8729D7B9C600E34F68 /* SceneDelegate.swift */; };
 		AE324D8A29D7B9C600E34F68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8929D7B9C600E34F68 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 		AE324DAC29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DAB29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift */; };
 		AE324DB929D7F75700E34F68 /* RaidsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DB829D7F75700E34F68 /* RaidsVC.swift */; };
 		AE324DBB29D821D200E34F68 /* TV_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DBA29D821D200E34F68 /* TV_Cell.swift */; };
+		AE33D66729D8901600D6699D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33D66629D8901600D6699D /* RegisterViewController.swift */; };
+		AE556ADD29D87D1300B3F592 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE556ADC29D87D1300B3F592 /* LoginVC.swift */; };
+		F96CE0529C166AABD9138E6D /* Pods_TrashGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C04F8D85A08441956A59B0 /* Pods_TrashGoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09F49D56B9D9F10A53CF7B69 /* Pods-TrashGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashGo.debug.xcconfig"; path = "Target Support Files/Pods-TrashGo/Pods-TrashGo.debug.xcconfig"; sourceTree = "<group>"; };
 		1652F9EC29D7E99600372EED /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		16F77A3229D84A700047E436 /* PopoverProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverProfile.swift; sourceTree = "<group>"; };
+		2639A0721C226BAC5EC8D5D8 /* Pods-TrashGo-TrashGoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashGo-TrashGoUITests.release.xcconfig"; path = "Target Support Files/Pods-TrashGo-TrashGoUITests/Pods-TrashGo-TrashGoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		280A13452DE7B1F4A3DF718E /* Pods-TrashGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashGo.release.xcconfig"; path = "Target Support Files/Pods-TrashGo/Pods-TrashGo.release.xcconfig"; sourceTree = "<group>"; };
+		3196F1F0E45B511F10F4655C /* Pods-TrashGo-TrashGoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashGo-TrashGoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrashGo-TrashGoUITests/Pods-TrashGo-TrashGoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3317A4E539FB72556E236D93 /* Pods-TrashGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashGoTests.debug.xcconfig"; path = "Target Support Files/Pods-TrashGoTests/Pods-TrashGoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		675D832F093560D85E5C53DF /* Pods-TrashGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrashGoTests.release.xcconfig"; path = "Target Support Files/Pods-TrashGoTests/Pods-TrashGoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E5F139D56F78B1C8EB3500E /* Pods_TrashGo_TrashGoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrashGo_TrashGoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0BB29529D8649B006013FA /* LBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCell.swift; sourceTree = "<group>"; };
 		AE324D8229D7B9C600E34F68 /* TrashGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrashGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE324D8529D7B9C600E34F68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE324D8729D7B9C600E34F68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +73,10 @@
 		AE324DAB29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AE324DB829D7F75700E34F68 /* RaidsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidsVC.swift; sourceTree = "<group>"; };
 		AE324DBA29D821D200E34F68 /* TV_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV_Cell.swift; sourceTree = "<group>"; };
+		AE33D66629D8901600D6699D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AE556ADC29D87D1300B3F592 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DC57DB699658E1D7B8C71EC0 /* Pods_TrashGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrashGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C04F8D85A08441956A59B0 /* Pods_TrashGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrashGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E4E450372CFEAEB57E6372 /* Pods_TrashGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96CE0529C166AABD9138E6D /* Pods_TrashGoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79265024E59810E570D22B4B /* Pods_TrashGo_TrashGoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +114,8 @@
 				AE324D9E29D7B9C900E34F68 /* TrashGoTests */,
 				AE324DA829D7B9C900E34F68 /* TrashGoUITests */,
 				AE324D8329D7B9C600E34F68 /* Products */,
+				D84BC469DD715E5AC34C0D05 /* Pods */,
+				FED034EF0F28331297B0E9DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,8 +142,11 @@
 				AE324D8E29D7B9C600E34F68 /* TrashGo.xcdatamodeld */,
 				AE324DB829D7F75700E34F68 /* RaidsVC.swift */,
 				1652F9EC29D7E99600372EED /* ProfileVC.swift */,
+				AE556ADC29D87D1300B3F592 /* LoginVC.swift */,
+				AE0BB29529D8649B006013FA /* LBCell.swift */,
 				AE324DBA29D821D200E34F68 /* TV_Cell.swift */,
 				16F77A3229D84A700047E436 /* PopoverProfile.swift */,
+				AE33D66629D8901600D6699D /* RegisterViewController.swift */,
 			);
 			path = TrashGo;
 			sourceTree = "<group>";
@@ -142,6 +168,29 @@
 			path = TrashGoUITests;
 			sourceTree = "<group>";
 		};
+		D84BC469DD715E5AC34C0D05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09F49D56B9D9F10A53CF7B69 /* Pods-TrashGo.debug.xcconfig */,
+				280A13452DE7B1F4A3DF718E /* Pods-TrashGo.release.xcconfig */,
+				3196F1F0E45B511F10F4655C /* Pods-TrashGo-TrashGoUITests.debug.xcconfig */,
+				2639A0721C226BAC5EC8D5D8 /* Pods-TrashGo-TrashGoUITests.release.xcconfig */,
+				3317A4E539FB72556E236D93 /* Pods-TrashGoTests.debug.xcconfig */,
+				675D832F093560D85E5C53DF /* Pods-TrashGoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FED034EF0F28331297B0E9DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC57DB699658E1D7B8C71EC0 /* Pods_TrashGo.framework */,
+				7E5F139D56F78B1C8EB3500E /* Pods_TrashGo_TrashGoUITests.framework */,
+				E9C04F8D85A08441956A59B0 /* Pods_TrashGoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE324DAF29D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGo" */;
 			buildPhases = (
+				69DB22AC9AD0396F55A7E6AB /* [CP] Check Pods Manifest.lock */,
 				AE324D7E29D7B9C600E34F68 /* Sources */,
 				AE324D7F29D7B9C600E34F68 /* Frameworks */,
 				AE324D8029D7B9C600E34F68 /* Resources */,
+				7B26B455873EBB2B6CEB3A04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE324DB229D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGoTests" */;
 			buildPhases = (
+				C13320A3D566625AE9E2C66D /* [CP] Check Pods Manifest.lock */,
 				AE324D9729D7B9C900E34F68 /* Sources */,
 				AE324D9829D7B9C900E34F68 /* Frameworks */,
 				AE324D9929D7B9C900E34F68 /* Resources */,
@@ -184,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE324DB529D7B9C900E34F68 /* Build configuration list for PBXNativeTarget "TrashGoUITests" */;
 			buildPhases = (
+				4BBA6C11D59D6F86EC23CC09 /* [CP] Check Pods Manifest.lock */,
 				AE324DA129D7B9C900E34F68 /* Sources */,
 				AE324DA229D7B9C900E34F68 /* Frameworks */,
 				AE324DA329D7B9C900E34F68 /* Resources */,
+				2BC9268F14D544C08AD805E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,14 +322,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BC9268F14D544C08AD805E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrashGo-TrashGoUITests/Pods-TrashGo-TrashGoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrashGo-TrashGoUITests/Pods-TrashGo-TrashGoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrashGo-TrashGoUITests/Pods-TrashGo-TrashGoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BBA6C11D59D6F86EC23CC09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrashGo-TrashGoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DB22AC9AD0396F55A7E6AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrashGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B26B455873EBB2B6CEB3A04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrashGo/Pods-TrashGo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrashGo/Pods-TrashGo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrashGo/Pods-TrashGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C13320A3D566625AE9E2C66D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrashGoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE324D7E29D7B9C600E34F68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE324DB929D7F75700E34F68 /* RaidsVC.swift in Sources */,
+				AE33D66729D8901600D6699D /* RegisterViewController.swift in Sources */,
 				1652F9ED29D7E99600372EED /* ProfileVC.swift in Sources */,
 				AE324D9029D7B9C600E34F68 /* TrashGo.xcdatamodeld in Sources */,
+				AE0BB29629D8649B006013FA /* LBCell.swift in Sources */,
+				AE556ADD29D87D1300B3F592 /* LoginVC.swift in Sources */,
 				AE324D8A29D7B9C600E34F68 /* ViewController.swift in Sources */,
 				AE324D8629D7B9C600E34F68 /* AppDelegate.swift in Sources */,
 				AE324DBB29D821D200E34F68 /* TV_Cell.swift in Sources */,
@@ -452,6 +612,7 @@
 		};
 		AE324DB029D7B9C900E34F68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F49D56B9D9F10A53CF7B69 /* Pods-TrashGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,6 +645,7 @@
 		};
 		AE324DB129D7B9C900E34F68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280A13452DE7B1F4A3DF718E /* Pods-TrashGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,6 +678,7 @@
 		};
 		AE324DB329D7B9C900E34F68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3317A4E539FB72556E236D93 /* Pods-TrashGoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +699,7 @@
 		};
 		AE324DB429D7B9C900E34F68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 675D832F093560D85E5C53DF /* Pods-TrashGoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +720,7 @@
 		};
 		AE324DB629D7B9C900E34F68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3196F1F0E45B511F10F4655C /* Pods-TrashGo-TrashGoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -574,6 +739,7 @@
 		};
 		AE324DB729D7B9C900E34F68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2639A0721C226BAC5EC8D5D8 /* Pods-TrashGo-TrashGoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

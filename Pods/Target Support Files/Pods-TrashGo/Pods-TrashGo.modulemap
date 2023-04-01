@@ -1,0 +1,6 @@
+framework module Pods_TrashGo {
+  umbrella header "Pods-TrashGo-umbrella.h"
+
+  export *
+  module * { export * }
+}

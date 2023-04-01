@@ -7,9 +7,12 @@
 
 import UIKit
 
+var logged_in = false
+
 class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
+    
     
     struct event{
         let icon: String
@@ -30,7 +33,15 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         table.dataSource = self
         table.delegate = self
+        
+        if !logged_in{
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "login", sender: nil)
+            }
+        }
     }
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
