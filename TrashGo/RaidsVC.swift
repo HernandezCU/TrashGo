@@ -67,7 +67,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         print(key)
         
         DispatchQueue.main.async {
-            self.performSegue(withIdentifier: "map", sender: nil)
+            //self.performSegue(withIdentifier: "map", sender: nil)
         }
         
     }
@@ -143,6 +143,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     self.data.removeAll()
                     for i in response.places{
                         var icn = ""
+                        print(i.type)
                         if i.type == "park"{
                             var icn = "tree.circle.fill"
                         }else{
