@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1652F9ED29D7E99600372EED /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652F9EC29D7E99600372EED /* ProfileVC.swift */; };
+		16F77A3329D84A710047E436 /* PopoverProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F77A3229D84A700047E436 /* PopoverProfile.swift */; };
 		AE324D8629D7B9C600E34F68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8529D7B9C600E34F68 /* AppDelegate.swift */; };
 		AE324D8829D7B9C600E34F68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8729D7B9C600E34F68 /* SceneDelegate.swift */; };
 		AE324D8A29D7B9C600E34F68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D8929D7B9C600E34F68 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		1652F9EC29D7E99600372EED /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		16F77A3229D84A700047E436 /* PopoverProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverProfile.swift; sourceTree = "<group>"; };
 		AE324D8229D7B9C600E34F68 /* TrashGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrashGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE324D8529D7B9C600E34F68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE324D8729D7B9C600E34F68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				AE324D9629D7B9C900E34F68 /* Info.plist */,
 				AE324D8E29D7B9C600E34F68 /* TrashGo.xcdatamodeld */,
 				1652F9EC29D7E99600372EED /* ProfileVC.swift */,
+				16F77A3229D84A700047E436 /* PopoverProfile.swift */,
 			);
 			path = TrashGo;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				AE324D8A29D7B9C600E34F68 /* ViewController.swift in Sources */,
 				AE324D8629D7B9C600E34F68 /* AppDelegate.swift in Sources */,
 				AE324D8829D7B9C600E34F68 /* SceneDelegate.swift in Sources */,
+				16F77A3329D84A710047E436 /* PopoverProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
