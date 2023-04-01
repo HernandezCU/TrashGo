@@ -13,7 +13,7 @@ struct resp: Codable{
     let success: Bool
     let error: String
 }
-
+var user_key = ""
 class LoginVC: UIViewController {
 
     @IBOutlet weak var email_field: UITextField!
@@ -59,6 +59,7 @@ class LoginVC: UIViewController {
                                         shadowBlurRadius: 0)
                     print(response.success)
                     DispatchQueue.main.async {
+                        user_key = self.email_field.text!
                         self.dismiss(animated: true)
 //                        self.key_label.text = user.user.key
 //                        self.email_label.text = user.user.email

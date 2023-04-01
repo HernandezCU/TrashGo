@@ -11,6 +11,11 @@ import NotificationBannerSwift
 
 class RegisterViewController: UIViewController {
 
+    struct resp: Codable{
+        let success: Bool
+        let error: String
+    }
+    
     @IBOutlet weak var name: UITextField!
     
     @IBOutlet weak var email: UITextField!
