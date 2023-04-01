@@ -33,8 +33,62 @@ class RegisterViewController: UIViewController {
     @IBAction func register(_ sender: Any) {
         spinner.startAnimating()
         if email.hasText && name.hasText && username.hasText && password.hasText && zipcode.hasText{
+                
+            spinner.startAnimating()
+            
+            guard let emailText = email_field.text, let emailData = emailText.data(using: .utf8) else {
+                print("Invalid email")
+                return
+            }
+            
+            guard let passwordText = password_field.text, let passwordData = passwordText.data(using: .utf8) else {
+                print("Invalid password")
+                return
+            }
             
             
+            let parameters: Parameters = [
+                "email": email_field.text!,
+                "password": password_field.text!,
+                "name": name.text!,
+                "username": username.text!,
+                "zip-code": zipcode.text!
+            ]
+            
+            let request = AF.request("https://greencitygo.net/register", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+                                                          
+            request.responseDecodable(of: resp.self) { (response) in
+                print("here4")
+                guard let response = response.value else {
+                    print("Failed")
+                    print(response)
+                    return }
+                print("Success")
+                self.spinner.stopAnimating()
+                if (response.success != true){
+                    let error_banner = FloatingNotificationBanner(title: "Could not Register", subtitle: response.error, style: .danger)
+                    error_banner.show(queuePosition: .front,
+                                      bannerPosition: .top,
+                                      cornerRadius: 10,
+                                      shadowBlurRadius: 0)
+                    
+                }else{
+                    let success_banner = FloatingNotificationBanner(title: "Logged In Successfully", subtitle: response.error, style: .success)
+                    success_banner.show(queuePosition: .front,
+                                        bannerPosition: .top,
+                                        cornerRadius: 10,
+                                        shadowBlurRadius: 0)
+                    print(response.success)
+                    DispatchQueue.main.async {
+                        self.dismiss(animated: true)
+                        //                        self.key_label.text = user.user.key
+                        //                        self.email_label.text = user.user.email
+                        //                        self.name_label.text = user.user.name
+                        //                        self.password_label.text = user.user.password
+                        //                        self.phone_label.text = user.user.phone_number
+                    }
+                }
+            }
         }
     }
     /*
