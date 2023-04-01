@@ -18,6 +18,8 @@
 		AE324DA029D7B9C900E34F68 /* TrashGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324D9F29D7B9C900E34F68 /* TrashGoTests.swift */; };
 		AE324DAA29D7B9C900E34F68 /* TrashGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DA929D7B9C900E34F68 /* TrashGoUITests.swift */; };
 		AE324DAC29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DAB29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift */; };
+		AE324DB929D7F75700E34F68 /* RaidsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DB829D7F75700E34F68 /* RaidsVC.swift */; };
+		AE324DBB29D821D200E34F68 /* TV_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE324DBA29D821D200E34F68 /* TV_Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		AE324DA529D7B9C900E34F68 /* TrashGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrashGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE324DA929D7B9C900E34F68 /* TrashGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashGoUITests.swift; sourceTree = "<group>"; };
 		AE324DAB29D7B9C900E34F68 /* TrashGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE324DB829D7F75700E34F68 /* RaidsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidsVC.swift; sourceTree = "<group>"; };
+		AE324DBA29D821D200E34F68 /* TV_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV_Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,9 @@
 				AE324D9329D7B9C900E34F68 /* LaunchScreen.storyboard */,
 				AE324D9629D7B9C900E34F68 /* Info.plist */,
 				AE324D8E29D7B9C600E34F68 /* TrashGo.xcdatamodeld */,
+				AE324DB829D7F75700E34F68 /* RaidsVC.swift */,
 				1652F9EC29D7E99600372EED /* ProfileVC.swift */,
+				AE324DBA29D821D200E34F68 /* TV_Cell.swift */,
 			);
 			path = TrashGo;
 			sourceTree = "<group>";
@@ -264,10 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE324DB929D7F75700E34F68 /* RaidsVC.swift in Sources */,
 				1652F9ED29D7E99600372EED /* ProfileVC.swift in Sources */,
 				AE324D9029D7B9C600E34F68 /* TrashGo.xcdatamodeld in Sources */,
 				AE324D8A29D7B9C600E34F68 /* ViewController.swift in Sources */,
 				AE324D8629D7B9C600E34F68 /* AppDelegate.swift in Sources */,
+				AE324DBB29D821D200E34F68 /* TV_Cell.swift in Sources */,
 				AE324D8829D7B9C600E34F68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
