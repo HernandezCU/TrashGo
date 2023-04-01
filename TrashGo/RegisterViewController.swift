@@ -25,6 +25,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initializeHideKeyboard()
 
         // Do any additional setup after loading the view.
     }
@@ -36,20 +37,10 @@ class RegisterViewController: UIViewController {
                 
             spinner.startAnimating()
             
-            guard let emailText = email_field.text, let emailData = emailText.data(using: .utf8) else {
-                print("Invalid email")
-                return
-            }
-            
-            guard let passwordText = password_field.text, let passwordData = passwordText.data(using: .utf8) else {
-                print("Invalid password")
-                return
-            }
-            
             
             let parameters: Parameters = [
-                "email": email_field.text!,
-                "password": password_field.text!,
+                "email": email.text!,
+                "password": password.text!,
                 "name": name.text!,
                 "username": username.text!,
                 "zip-code": zipcode.text!
