@@ -65,6 +65,11 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         fetch_me()
         print(key)
+        
+        DispatchQueue.main.async {
+            //self.performSegue(withIdentifier: "map", sender: nil)
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -123,7 +128,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func fetch_data(zip: String){
         let parameters: Parameters = ["zip_code": zip]
         
-        let request = AF.request("http://127.0.0.1:5000/search", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        let request = AF.request("https://greencitygo.net/search", method: .post, parameters: parameters, encoding: JSONEncoding.default)
                                                       
         request.responseDecodable(of: nplaces.self) { (response) in
             print("here4")
@@ -138,6 +143,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     self.data.removeAll()
                     for i in response.places{
                         var icn = ""
+                        print(i.type)
                         if i.type == "park"{
                             var icn = "tree.circle.fill"
                         }else{
