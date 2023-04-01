@@ -93,7 +93,7 @@ class PopoverProfile: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func fetchLB(){
         
-        let request = AF.request("https://greencitygo.net/leaderboard", method: .get)
+        let request = AF.request("http://127.0.0.1:5000/leaderboard", method: .get)
         
         request.responseDecodable(of: resp.self) { (response) in
             print("here4")

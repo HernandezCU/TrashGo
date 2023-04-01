@@ -51,7 +51,7 @@ class RegisterViewController: UIViewController {
                 "zip-code": zipcode.text!
             ]
             
-            let request = AF.request("https://greencitygo.net/register", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            let request = AF.request("http://127.0.0.1:5000/register", method: .post, parameters: parameters, encoding: JSONEncoding.default)
                                                           
             request.responseDecodable(of: resp.self) { (response) in
                 print("here4")

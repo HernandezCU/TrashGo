@@ -34,7 +34,7 @@ class LoginVC: UIViewController {
             
             let parameters: Parameters = ["email": email_field.text!, "password": password_field.text!]
             
-            let request = AF.request("https://greencitygo.net/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            let request = AF.request("http://127.0.0.1:5000/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
                                                           
             request.responseDecodable(of: resp.self) { (response) in
                 debugPrint(response)

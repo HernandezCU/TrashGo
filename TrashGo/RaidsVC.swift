@@ -108,7 +108,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             "email": "matt@matt.com"
         ]
 
-        AF.request("https://greencitygo.net/me", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
+        AF.request("http://127.0.0.1:5000/me", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
             switch response.result {
             case .success(let data):
                 print(data)
@@ -128,7 +128,7 @@ class RaidsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func fetch_data(zip: String){
         let parameters: Parameters = ["email": zip]
         
-        let request = AF.request("https://greencitygo.net/search", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        let request = AF.request("http://127.0.0.1:5000/search", method: .post, parameters: parameters, encoding: JSONEncoding.default)
                                                       
         request.responseDecodable(of: nplaces.self) { (response) in
             print("here4")
